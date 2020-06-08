@@ -7,7 +7,7 @@
 sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3.5 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf
 `
 
-3. `git clone -b dev-19.07 https://github.com/Lienol/openwrt op19` 命令下载好源代码，然后 `cd op19` 进入目录
+3. `git clone https://github.com/week9/OpenWRT.git openwrt19` 命令下载好源代码，然后 `cd openwrt19` 进入目录
 
 4. ```bash
    ./scripts/feeds clean
@@ -21,7 +21,7 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 6. 输入 `make -j1 V=s` （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
 
-6. 编译完成后输出路径：op-19/bin/targets
+6. 编译完成后输出路径：openwrt19/bin/targets
 
 你可以自由使用，但源码编译二次发布请注明我的 GitHub 仓库链接。谢谢合作！
  
